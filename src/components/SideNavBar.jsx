@@ -11,11 +11,9 @@ const sideBarList = [
 ];
 
 function SideNavBar() {
-  // const navigate = useNavigate();
-
   const { pathname } = useLocation();
   const activePath = pathname?.split('/')[1];
-  console.log(activePath, 'activepath');
+
   return (
     <div className="py-4">
       {sideBarList.map(item => (

@@ -3,7 +3,7 @@ function Navbar() {
   return (
     <div className="bg-white h-16 flex place-items-center justify-between px-8">
       <div className="uppercase text-2xl font-bold flex gap-3">
-        <img src={logo} alt="" className='h-9 w-9' />
+        <img src={logo} alt="" className="h-9 w-9" />
         assiduss
       </div>
       <div className="flex place-items-center gap-5">
