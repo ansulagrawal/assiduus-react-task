@@ -1,1 +1,1 @@
-# ASSIDUUS GLOBAL - REACT JS ASSIGNMENT
+# ASSIDUUS GLOBAL - REACT JS ASSIGNMENT [![Netlify Status](https://api.netlify.com/api/v1/badges/b3fa87f1-3569-4c08-9a31-992ec7113ede/deploy-status)](https://app.netlify.com/sites/assiduus-react-task/deploys)
