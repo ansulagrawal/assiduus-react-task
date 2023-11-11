@@ -81,13 +81,13 @@ function BarChart({ data, className, barColor }) {
       const margin = { top: 40, right: 50, bottom: 60, left: 50 };
       const xScale = d3
         .scaleBand()
-        .domain(data.map(d => d.x))
+        .domain(data.map(d => d.category))
         .range([0, width - margin.left - margin.right])
         .paddingInner(0.1);
 
       const yScale = d3
         .scaleLinear()
-        .domain([d3.min(data, d => d.y), d3.max(data, d => d.y)])
+        .domain([d3.min(data, d => d.value), d3.max(data, d => d.value)])
         .range([height - margin.top - margin.bottom, 0]);
 
       // Create and append the x-axis
@@ -110,10 +110,10 @@ function BarChart({ data, className, barColor }) {
         .enter()
         .append('rect')
         .attr('class', clsx('bar', barColor))
-        .attr('x', d => xScale(d.x))
-        .attr('y', d => yScale(d.y))
+        .attr('x', d => xScale(d.category))
+        .attr('y', d => yScale(d.value))
         .attr('width', xScale.bandwidth())
-        .attr('height', d => height - margin.top - margin.bottom - yScale(d.y));
+        .attr('height', d => height - margin.top - margin.bottom - yScale(d.value));
     }
   }, [svgRef?.current, parentSize.height, parentSize.width, JSON.stringify(data)]);
 

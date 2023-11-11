@@ -6,30 +6,19 @@
   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
-.checking-account-graph {
-  .y-axis {
-    visibility: hidden;
-  }
-  .axis.x-axis {
-    path,
-    line {
-      stroke-width: 0;
-    }
-    .tick text {
-      font-size: 14px;
-      color: #cbcbcb;
-    }
-  }
+
+.axis.y-axis {
+  visibility: hidden;
 }
 
-.invoice-graph {
-  .y-axis {
-    visibility: hidden;
+.axis.x-axis {
+  path,
+  line {
+    stroke-width: 0;
   }
-  .axis.x-axis {
-    path,
-    line {
-      stroke-width: 0;
-    }
+  .tick text {
+    font-size: 14px;
+    color: #cbcbcb;
+    font-weight: 400;
   }
 }
