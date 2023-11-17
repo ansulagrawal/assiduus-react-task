@@ -18,11 +18,11 @@ function Layout() {
   return (
     <>
       <Navbar />
-      <div className="flex h-[calc(100vh-4rem)] flex-col md:flex-row md:overflow-hidden">
-        <div className="w-full flex-none md:w-64">
+      <div className="flex w-screen overflow-hidden h-[calc(100vh-4rem)] flex-col md:flex-row">
+        <div className="hidden md:block md:w-64">
           <SideNavBar />
         </div>
-        <div className="bg-[#F6F7F9] w-full">
+        <div className="bg-[#F6F7F9] w-screen h-full md:w-[calc(100vw-16rem)]">
           <Outlet></Outlet>
         </div>
       </div>

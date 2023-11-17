@@ -36,8 +36,8 @@ function Dashboard() {
 
   return (
     <>
-      <div className="w-full h-full overflow-y-auto flex flex-wrap justify-center p-4 gap-x-8 gap-y-4 place-items-center">
-        <div className="w-full lg:w-[calc(50%-2rem)] h-[calc(50%-1rem)] bg-white rounded-xl font-semibold">
+      <div className="w-full h-full overflow-y-auto flex flex-wrap justify-center p-4 xl:gap-x-8 gap-y-4 place-items-center">
+        <div className="w-[calc(100%-1.5rem)] overflow-x-hidden xl:w-[calc(50%-2rem)] h-[calc(50%-1rem)] bg-white rounded-xl font-semibold">
           <div className="flex px-4 justify-between place-items-center h-16 border-slate-200 border-b-[1px]">
             <h3 className="text-xl">Checking account</h3>
             <div className="flex gap-4">
@@ -60,7 +60,7 @@ function Dashboard() {
             />
           </div>
         </div>
-        <div className="w-full lg:w-[calc(50%-2rem)]  h-[calc(50%-1rem)] bg-white rounded-xl font-semibold">
+        <div className="w-[calc(100%-1.5rem)] overflow-x-hidden xl:w-[calc(50%-2rem)]  h-[calc(50%-1rem)] bg-white rounded-xl font-semibold">
           <div className="flex px-4 justify-between place-items-center h-16 border-slate-200 border-b-[1px]">
             <h3 className="text-xl">Invoices owed to you</h3>
             <button className="bg-slate-300 font-semibold py-2 px-3 rounded-md text-green-600" onClick={() => setIsOpen(true)}>
@@ -83,7 +83,7 @@ function Dashboard() {
             />
           </div>
         </div>
-        <div className="w-full lg:w-[calc(50%-2rem)]  h-[calc(50%-1rem)] bg-white rounded-xl font-semibold">
+        <div className="w-[calc(100%-1.5rem)] overflow-x-hidden xl:w-[calc(50%-2rem)]  h-[calc(50%-1rem)] bg-white rounded-xl font-semibold">
           <div className="flex px-4 justify-between place-items-center h-16 border-slate-200 border-b-[1px]">
             <h3 className="text-xl">Total Cash Flow</h3>
             <div className="flex gap-4">
@@ -107,7 +107,7 @@ function Dashboard() {
             />
           </div>
         </div>
-        <div className="w-full lg:w-[calc(50%-2rem)]  h-[calc(50%-1rem)] bg-white rounded-xl font-semibold">
+        <div className="w-[calc(100%-1.5rem)] overflow-x-hidden xl:w-[calc(50%-2rem)]  h-[calc(50%-1rem)] bg-white rounded-xl font-semibold">
           <div className="flex px-4 justify-between place-items-center h-16 border-slate-200 border-b-[1px]">
             <h3 className="text-xl">Account Watchlist</h3>
           </div>
